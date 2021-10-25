@@ -4,8 +4,8 @@ const cross = String.fromCodePoint(0x026D4);
 // FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
   (actual === expected) ?
-    console.log(check + ' ' + check + ' ' + check + ' ' + ' Assertion Passed: ' + actual + ' === ' + expected) :
-    console.log(cross + ' ' + cross + ' ' + cross + ' ' + ' Assertion failed: ' + actual + ' !== ' + expected);
+    console.log(`${check} ${check} ${check} Assertion Passed: ${actual} === ${expected}`) :
+    console.log(`${cross}${cross}${cross} Assertion Passed: ${actual} !== ${expected}`);
 };
 
 // TEST CODE
