@@ -8,13 +8,7 @@ const eqArrays = function (actual, expected) {
     actual.length === expected.length &&
     actual.every((val, index) => val === expected[index]);
 
-  tmp ?
-    console.log(`${check} ${check} ${check} Assertion Passed: ${actual} === ${expected}`) :
-    console.log(`${cross}${cross}${cross} Assertion Passed: ${actual} !== ${expected}`);
+  return tmp;
 };
 
-eqArrays([1, 2, 3], [1, 2, 3]) // => true
-eqArrays([1, 2, 3], [3, 2, 1]) // => false
-
-eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
-eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
