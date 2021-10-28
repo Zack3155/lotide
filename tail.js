@@ -27,3 +27,4 @@ tail(tmp1);
 assertEqual(tmp1.length, 0);
 tail(tmp2);
 assertEqual(tmp2.length, 1);
+console.log(..);

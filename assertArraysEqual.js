@@ -8,7 +8,11 @@ const eqArrays = function (actual, expected) {
     actual.length === expected.length &&
     actual.every((val, index) => val === expected[index]);
 
-  tmp ?
+  return tmp;
+};
+
+const assertArraysEqual = function (actual, expected) {
+  eqArrays(actual, expected) ?
     console.log(`${check} ${check} ${check} Assertion Passed: ${actual} === ${expected}`) :
     console.log(`${cross}${cross}${cross} Assertion Passed: ${actual} !== ${expected}`);
 };

@@ -10,10 +10,6 @@ const eqArrays = function (actual, expected) {
   return tmp;
 };
 
-
-// FUNCTION IMPLEMENTATION
-
-
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
 const eqObjects = function (object1, object2) {
@@ -38,6 +34,8 @@ const eqObjects = function (object1, object2) {
 };
 
 
+
+// FUNCTION IMPLEMENTATION
 const assertObjectsEqual = function(actual, expected) {
   // Implement me!
   const inspect = require('util').inspect;

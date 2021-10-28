@@ -1,10 +1,9 @@
 const takeUntil = function (array, callback) {
   // ...
   let results = [];
-  let target = array.filter(callback)[0];
 
   for (let item of array) {
-    if (item !== target) results.push(item);
+    if (!callback(item)) results.push(item);
     else break;
   }
 
